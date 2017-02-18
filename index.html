@@ -2,15 +2,21 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <title>Image Viewer Electron</title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #323232;
+      color: rgba(255,255,255,0.7);
+      padding: 1%;
+    }
+    </style>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
-    <strong>This is pretty amazing stuff</strong>
+    <app-name>Loading...</app-name>
+    <script src="./dist/bundle.js" type="text/javascript"></script>
   </body>
 
   <script>

@@ -1,5 +1,9 @@
-dist
+*dist/**/*.js
 node_modules
-./src/**/*.js
+*src/**/*.js
+*src/**/*.js.map
+*src/*.js
+*src/*.js.map
+
 !main.js
 !webpack.config.js
